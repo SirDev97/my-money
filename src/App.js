@@ -1,5 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+// components
+import Navbar from './components/Navbar';
+
 // pages
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
@@ -9,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
