@@ -13,12 +13,9 @@ export const useCollection = (collection, _query, _orderBy) => {
   useEffect(() => {
     let ref = projectFirestore.collection(collection);
 
-    if (query) {
-      ref = ref.where(...query);
-    }
-    if (orderBy) {
-      ref = ref.orderBy(...orderBy);
-    }
+    if (query) ref = ref.where(...query);
+
+    if (orderBy) ref = ref.orderBy(...orderBy);
 
     const unsubscribe = ref.onSnapshot(
       (snapshot) => {
