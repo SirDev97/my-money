@@ -26,4 +26,5 @@
 
   - [x] Real-time collection data.
 
-### App Site: `https://mymoney-8cf14.web.app/login`
+### App Site: https://mymoney-8cf14.web.app/
+- test user: test@mail.dev, 123456
